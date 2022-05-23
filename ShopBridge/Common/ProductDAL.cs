@@ -10,7 +10,7 @@ namespace ShopBridge.Common
 {
     public class ProductDAL
     {
-        string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=ShopBridge;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
+        string connectionString = "Give Connection String value"; // Value used for testing is given in "ShopBridge_DB_Scripts" document
         SqlConnection sqlCon = null;
 
 
