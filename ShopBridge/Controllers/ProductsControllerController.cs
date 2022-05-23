@@ -66,7 +66,7 @@ namespace ShopBridge.Controllers
                 if (product.productDescription == null) validationMessage += "Product Description cannot be null:";
                 if (product.productPrice == 0) validationMessage += "Product price cannot be null:";
 
-                if (validationMessage != null)
+                if (validationMessage != "")
                     return Request.CreateResponse(HttpStatusCode.BadRequest, validationMessage);
 
                 var result = await pBll.addProduct(product);
